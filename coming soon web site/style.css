@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Nunito:wght@200;700&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,600&display=swap');
+
+body{
+    color: white !important;
+    font-family: 'Lobster';
+}
+
+#particles-js{
+    position: fixed;
+    z-index: -100;
+    width: 100%;
+    height: 100%;
+    background: #642B73;  
+    background: -webkit-linear-gradient(to right, #C6426E, #642B73); 
+    background: linear-gradient(to right, #C6426E, #642B73); 
+
+}
+
+
+
+.logo1{
+    width: 200px;
+    clip-path: circle();
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    margin-left: 50px;
+    margin-top: 67px;
+    
+    
+}
+
+
+.header{
+    position: relative;
+    text-align: center;
+    
+}
+
+.header .logo-image{
+    width: 7.12rem;
+    height: 2.75rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 40px;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: Lobster;
+    letter-spacing: 2px;
+}
+
+
+
+
+.header .contact-container{
+    margin-bottom: 3.5rem;
+}
+
+
+
+
+
+
+.countdown{
+    margin-bottom: 2.25rem;
+}
+
+.p-heading{
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.form-group{
+    position: relative;
+    margin-bottom: 1.25rem;
+}
+
+.form-control-input{
+    display: block;
+    width: 100%;
+    padding-top: 1.0625rem;
+    padding-bottom: 0.0625rem;
+    padding-left: 1.3125rem;
+    border: 1px solid #c4d8dc;
+    border-radius: 0.25rem;
+    background-color: white;
+    color: #777;
+    font-size: 0.875rem;
+    line-height: 1.875rem;
+    transition: all 0.2s;
+    
+
+}
+
+
+
+.form-control-submit-button{
+    display: inline-block;
+    width: 100%;
+    height: 3.125rem;
+    border: 0.125rem solid #d61880;
+    border-radius: 1.5rem;
+    background-color: #d61880;
+    color: white;
+    font-weight: 500;
+    line-height: 0;
+    cursor: pointer;
+    transition: all 0.2s;
+
+}
+
+
+
+.countdown .counter-number{
+    display: inline-block;
+    width: 10rem;
+    height: 10rem;
+    margin-right: 0.5rem;
+    margin-bottom: 1.25rem;
+    margin-left: 0.5rem;
+    padding-top: 4rem;
+    border-radius: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    font-weight: 400;
+    line-height: 1.25rem;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.counter-number .timer-text{
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.rem;
+    text-align: center;
+    margin-top: 4.5rem;
+}
+
+
+
+
+
+
+
+
+/* hover effect css*/
+
+
+.loader{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+}
+
+
+
+.loader span{
+    position: absolute;
+    margin-left: 0px;
+    margin-top: 0px;
+    
+    width: 100%;
+    height: 100%;
+    transform: rotate(calc(36deg * var(--i)));
+}
+
+
+
+.loader span::before{
+
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: transparent;
+    box-sizing: border-box;
+    border: 4px solid #00efff;
+    box-shadow: 0 0 10px #00efff,
+    -30px -30px 0 #00efff,
+    -30px -30px 20px #00efff,
+    30px 30px 0 #00efff,
+    30px 30px 20px #00efff,
+    30px -30px 0 #00efff,
+    30px -30px 20px #00efff,
+    -30px 30px 0 #00efff,
+    -30px 30px 20px #00efff;
+
+    animation: animate 5s linear infinite;
+    animation-delay: calc(-0.25s * var(--i));
+    transform-origin: 20px;
+    transition: 2s;
+}
+
+
+
+
+.loader:hover span::before{
+
+
+    box-shadow: 0 0 20px #00efff,
+    -200px -200px 0 #00efff,
+    -200px -200px 20px #00efff,
+    200px 200px 0 #00efff,
+    200px 200px 20px #00efff,
+    200px -200px 0 #00efff,
+    200px -200px 20px #00efff,
+    -200px 200px 0 #00efff,
+    -200px 200px 20px #00efff;
+
+    transform-origin: 500px;
+}
+
+
+
+@keyframes animate
+{
+    0%
+    {
+        transform: rotate(0deg);
+        filter: hue-rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+        filter: hue-rotate(360deg);
+    }
+}
